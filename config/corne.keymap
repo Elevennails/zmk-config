@@ -47,10 +47,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6   &kp N7  &kp N8         &kp N9            &kp N0     &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans  &trans         &kp AT            &kp TILDE  &kp DELETE
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans   &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &kp ESC
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET  &trans  &kp RALT
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6     &kp N7     &kp N8         &kp N9            &kp N0     &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp MINUS  &kp EQUAL  &trans         &kp AT            &kp TILDE  &kp DELETE
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans     &trans     &kp LESS_THAN  &kp GREATER_THAN  &kp QMARK  &kp ESC
+                                        &kp LGUI      &trans        &kp SPACE       &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -62,10 +62,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1     &kp F2     &kp F3  &kp F4    &kp F5  &kp F6       &kp F7     &kp F8     &kp F9        &kp F11           &kp F12   &kp BSPC
-&kp LCTRL  &kp GRAVE  &trans  &trans    &trans  &trans       &kp MINUS  &kp EQUAL  &kp UP_ARROW  &kp SINGLE_QUOTE  &kp HASH  &kp DELETE
-&kp LSHFT  &kp PIPE   &trans  &trans    &trans  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT         &trans    &kp ESC
-                              &kp LGUI  &trans  &kp SPACE    &kp RET    &trans     &kp RALT
+&kp F1     &kp F2     &kp F3    &kp F4       &kp F5   &kp F6       &kp F7     &kp F8     &kp F9        &kp F11           &kp F12   &kp BSPC
+&kp LCTRL  &kp GRAVE  &trans    &kp PAGE_UP  &trans   &kp INS      &kp MINUS  &kp EQUAL  &kp UP_ARROW  &kp SINGLE_QUOTE  &kp HASH  &kp DELETE
+&kp LSHFT  &kp PIPE   &kp HOME  &kp PG_DN    &kp END  &trans       &trans     &kp LEFT   &kp DOWN      &kp RIGHT         &trans    &kp ESC
+                                &kp LGUI     &trans   &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
