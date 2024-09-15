@@ -12,6 +12,15 @@
 &led_strip { chain-length = <54>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        Num_Combo {
+            bindings = <&sl 3>;
+            key-positions = <37 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -60,12 +69,12 @@
             >;
         };
 
-        layer_3 {
+        Num_Pad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp TAB         &trans  &trans  &trans  &trans  &kp UK_SLASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UK_MINUS  &trans  &kp BACKSPACE
+&kp LCTRL       &trans  &trans  &trans  &trans  &kp UK_ASTERISK    &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp UK_PLUS   &trans  &kp DEL
+&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER  &trans  &kp ESC
+                                &trans  &trans  &kp SPACE          &trans           &kp KP_N0        &kp DOT
             >;
         };
     };
